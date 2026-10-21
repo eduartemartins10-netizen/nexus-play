@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f4eb">
+    <meta
+      name="description"
+      content="NEXUS PLAY: uma vitrine acadêmica de jogos reais com charme de arcade e visual 8-bit.">
+    <title>Cadastro | NEXUS PLAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Press+Start+2P&amp;display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#principal">Pular para o conteúdo</a>
+    <div class="status-bar">
+      <div class="container status-inner">
+        <span><span class="status-dot"></span> PLAYER 01 • CONECTADO</span>
+        <span class="status-middle">SEU REFÚGIO GAMER DESDE 2026</span>
+        <span>◂ ◂ ★ ▸ ▸</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="index.html" class="brand" aria-label="NEXUS PLAY, voltar ao início">
+          <span aria-hidden="true" class="brand-icon">✚<small>••</small></span><span>NEXUS<span>PLAY</span><small>RETRO GAME CLUB</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a class="nav-link" href="index.html">Início</a>
+          <a class="nav-link" href="detalhes.html">Detalhes</a>
+          <a class="nav-link is-active" href="cadastro.html" aria-current="page">Cadastro</a>
+          <a class="nav-link" href="contato.html">Contato</a>
+        </nav>
+        <a class="header-cta" href="cadastro.html">JUNTE-SE <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="principal" class="inner-page">
+      <section class="page-heading container">
+        <span class="page-chip">✎ CREATE ACCOUNT // LEVEL 03</span>
+        <h1>Crie seu <em>player card.</em></h1>
+        <p>
+          Escolha seus jogos favoritos e personalize seu perfil. Este cadastro é apenas uma demonstração
+          acadêmica.
+        </p>
+      </section>
+      <section class="container form-layout">
+        <div class="form-shell">
+          <div class="form-heading">
+            <div class="form-avatar" aria-hidden="true">P1</div>
+            <div>
+              <p class="section-label">★ NOVO JOGADOR</p>
+              <h2>Seu próximo capítulo começa aqui.</h2>
+            </div>
+          </div>
+          <form id="player-form" action="#" method="get">
+            <fieldset>
+              <legend>01 / QUEM É VOCÊ?</legend>
+              <div class="form-two">
+                <div class="form-field">
+                  <label for="nome">Nome do jogador <span aria-hidden="true">*</span></label>
+                  <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    placeholder="Como podemos te chamar?"
+                    minlength="2"
+                    required
+                    autocomplete="name">
+                </div>
+                <div class="form-field">
+                  <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                    autocomplete="email">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="plataforma">Plataforma favorita <span aria-hidden="true">*</span></label>
+                <select name="plataforma" id="plataforma" required>
+                  <option value="" disabled selected>Selecione a sua plataforma...</option>
+                  <option value="pc">PC / Steam</option>
+                  <option value="playstation">PlayStation</option>
+                  <option value="xbox">Xbox</option>
+                  <option value="switch">Nintendo Switch</option>
+                  <option value="outra">Outra</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>02 / SEU ESTILO DE JOGO</legend>
+              <p class="fieldset-tip">Escolha uma opção:</p>
+              <div class="radio-cards">
+                <div>
+                  <input type="radio" id="relaxar" name="estilo" value="relaxar" required>
+                  <label for="relaxar"><span>✿</span><strong>Cozy</strong><small>Relaxar &amp; criar</small></label>
+                </div>
+                <div>
+                  <input type="radio" id="explorar" name="estilo" value="explorar">
+                  <label for="explorar"><span>✦</span><strong>Aventura</strong><small>Descobrir mundos</small></label>
+                </div>
+                <div>
+                  <input type="radio" id="competir" name="estilo" value="competir">
+                  <label for="competir"><span>⚡</span><strong>Desafio</strong><small>Superar fases</small></label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-end">
+              <p>ⓘ Os dados não são enviados ou armazenados. Campos com * são obrigatórios.</p>
+              <button type="submit" class="btn btn-dark">FINALIZAR CADASTRO ↗</button>
+            </div>
+            <div role="status" aria-live="polite" id="form-feedback" class="form-feedback" hidden></div>
+          </form>
+        </div>
+        <aside class="form-side">
+          <div class="aside-icon">✦</div>
+          <p class="section-label">PLAYER GUIDE</p>
+          <h2>Pronto para dar start?</h2>
+          <p>Monte seu perfil para explorar as estruturas de formulário usadas em projetos web reais.</p>
+          <ul>
+            <li><span>✓</span> Informações validadas no navegador</li>
+            <li><span>✓</span> Estilo escolhido com botões de opção</li>
+            <li><span>✓</span> Demonstração sem dados coletados</li>
+          </ul>
+          <div class="quest-note">TIP: pressione TAB para explorar os campos pelo teclado.</div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div>
+          <a class="footer-brand" href="index.html">NEXUS<span>PLAY</span> <span aria-hidden="true">✱</span></a>
+          <p>Uma curadoria gamer feita com pixels, nostalgia e carinho.</p>
+        </div>
+        <nav aria-label="Links do rodapé">
+          <a href="index.html">Início</a>
+          <a href="detalhes.html">Detalhes</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 NEXUS PLAY • PROJETO ACADÊMICO</span>
+        <span>As marcas e imagens pertencem aos seus respectivos titulares. Não vendemos jogos.</span>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
